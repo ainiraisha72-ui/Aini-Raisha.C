@@ -25,11 +25,11 @@
                         brand: {
                             50: '#f0fdf4',
                             100: '#dcfce7',
-                            500: '#059669', /* Emerald for precise corporate look */
+                            500: '#059669', /* Emerald/Teal untuk ketepatan kas/korporat */
                             600: '#059669',
                             700: '#047857',
                             900: '#064e3b',
-                            accent: '#b45309' /* Warm Bronze/Amber */
+                            accent: '#b45309' /* Warm Bronze/Amber untuk aksen sekretaris elegan */
                         }
                     }
                 }
@@ -163,46 +163,30 @@
                     </div>
                 </div>
 
-                <!-- Visual Area -->
+                <!-- Visual Area - Integrated Portrait Card with wa.jpg -->
                 <div class="lg:col-span-5 flex justify-center">
-                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
-                        <!-- Aesthetic geometric backgrounds -->
-                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-600 to-brand-accent rounded-[30%_70%_70%_30%/_30%_30%_70%_70%] animate-[spin_20s_linear_infinite] opacity-20"></div>
-                        <div class="absolute inset-4 bg-slate-200 dark:bg-slate-800 rounded-[70%_30%_30%_70%/_70%_70%_30%_30%] animate-[spin_15s_linear_infinite_reverse] opacity-40"></div>
+                    <div class="relative w-full max-w-[340px] sm:max-w-sm">
+                        <!-- Aesthetic gradient backdrops & shapes -->
+                        <div class="absolute -inset-2 bg-gradient-to-tr from-brand-600 to-brand-accent rounded-3xl blur opacity-25 animate-pulse"></div>
+                        <div class="absolute -top-4 -left-4 w-28 h-28 bg-brand-100 dark:bg-brand-900/20 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-6 -right-6 w-36 h-36 bg-brand-accent/15 rounded-full blur-2xl"></div>
                         
-                        <!-- Main Card -->
-                        <div class="absolute inset-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl p-6 sm:p-8 flex flex-col justify-between overflow-hidden group hover:scale-105 transition-transform duration-300">
-                            <div class="flex justify-between items-start">
-                                <span class="text-slate-400 dark:text-slate-600 text-sm">PNUP Student ID</span>
-                                <div class="w-8 h-8 rounded-full bg-brand-50 dark:bg-brand-950 flex items-center justify-center">
-                                    <i class="fa-solid fa-circle-check text-brand-600"></i>
+                        <!-- Main Frame showcasing Aini's formal photo -->
+                        <div class="relative rounded-2xl overflow-hidden bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl transition-all duration-500 hover:scale-[1.02] group">
+                            <div class="p-4 flex flex-col items-center">
+                                <!-- Photo Container with 3:4 Aspect Ratio -->
+                                <div class="relative mb-4 w-full aspect-[3/4] rounded-xl overflow-hidden bg-slate-100 dark:bg-slate-800">
+                                    <!-- User Photo (wa.jpg) with smooth fallback -->
+                                    <img src="wa.jpg" alt="Aini Raisha.C" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.src='https://placehold.co/300x400/059669/ffffff?text=Aini+Raisha';">
                                 </div>
-                            </div>
-                            
-                            <!-- Stylized avatar representation -->
-                            <div class="my-auto flex flex-col items-center py-4">
-                                <div class="relative mb-3">
-                                    <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-brand-500 to-brand-accent p-1 flex items-center justify-center">
-                                        <div class="w-full h-full rounded-full bg-white dark:bg-slate-900 flex items-center justify-center overflow-hidden">
-                                            <!-- Simple Hijab Profile Icon SVG -->
-                                            <svg class="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M12 2c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.78.18 1.6 1.05 1.6h13.2c.87 0 1.44-.82 1.05-1.6l-.62-2.79C20.26 15.07 21 13.12 21 11c0-4.97-4.03-9-9-9zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 13c-2.67 0-5.33-1.33-6-4h12c-.67 2.67-3.33 4-6 4z"/>
-                                            </svg>
-                                        </div>
+                                <div class="text-center space-y-1">
+                                    <h3 class="font-serif font-bold text-xl text-slate-800 dark:text-slate-100">Aini Raisha.C</h3>
+                                    <p class="text-xs text-brand-600 dark:text-brand-400 font-semibold tracking-wider">PROAKTIF & TELITI</p>
+                                    <div class="pt-2">
+                                        <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
+                                            <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-1.5 animate-pulse"></span> Aktif (PNUP)
+                                        </span>
                                     </div>
-                                    <span class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-white dark:border-slate-900 rounded-full animate-pulse"></span>
-                                </div>
-                                <h3 class="font-serif font-bold text-lg text-slate-800 dark:text-slate-100">Aini Raisha.C</h3>
-                                <p class="text-xs text-brand-600 dark:text-brand-400 font-semibold tracking-wider">PROAKTIF & TELITI</p>
-                            </div>
-                            
-                            <div class="space-y-2">
-                                <div class="flex justify-between text-xs text-slate-500 dark:text-slate-400">
-                                    <span>Program Studi:</span>
-                                    <span class="font-semibold text-slate-700 dark:text-slate-300 text-right">D4 Administrasi Bisnis</span>
-                                </div>
-                                <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-1.5 overflow-hidden">
-                                    <div class="bg-brand-600 h-full w-full rounded-full"></div>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +252,7 @@
                     <!-- Values Icons Grid -->
                     <div class="grid grid-cols-2 gap-4 pt-4">
                         <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/50 dark:border-slate-800/50 flex items-center space-x-3">
-                            <i class="fa-solid fa-bullseye text-brand-600 text-lg"></i>
+                            <i class="fa-solid fa-circle-check text-brand-600 text-lg"></i>
                             <span class="font-semibold text-sm">Akurasi & Presisi</span>
                         </div>
                         <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200/50 dark:border-slate-800/50 flex items-center space-x-3">
@@ -462,12 +446,22 @@
                     </div>
 
                     <!-- SMP Islam Sidoarjo -->
-                    <div class="relative pl-8 border-l-2 border-brand-500/30 dark:border-brand-500/20 last:border-0">
+                    <div class="relative pl-8 border-l-2 border-brand-500/30 dark:border-brand-500/20 last:border-0 pb-6">
                         <span class="absolute top-1.5 left-[-7px] w-3 h-3 bg-slate-400 rounded-full ring-4 ring-slate-100 dark:ring-slate-900/10"></span>
                         <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-2xl border border-slate-200/50 dark:border-slate-800/50 hover:shadow-md transition-shadow">
                             <span class="text-xs font-bold text-slate-500 tracking-wider">2018 - 2021</span>
                             <h4 class="font-bold text-lg text-slate-800 dark:text-slate-100 mt-1">Siswa Sekolah Menengah Pertama</h4>
                             <p class="text-slate-500 dark:text-slate-400 text-sm font-semibold">SMP Islam Sidoarjo</p>
+                        </div>
+                    </div>
+
+                    <!-- SD Inpres BTN IKIP 1 -->
+                    <div class="relative pl-8 border-l-2 border-brand-500/30 dark:border-brand-500/20 last:border-0">
+                        <span class="absolute top-1.5 left-[-7px] w-3 h-3 bg-slate-400 rounded-full ring-4 ring-slate-100 dark:ring-slate-900/10"></span>
+                        <div class="bg-slate-50 dark:bg-slate-950 p-6 rounded-2xl border border-slate-200/50 dark:border-slate-800/50 hover:shadow-md transition-shadow">
+                            <span class="text-xs font-bold text-slate-500 tracking-wider">2012 - 2018</span>
+                            <h4 class="font-bold text-lg text-slate-800 dark:text-slate-100 mt-1">Sekolah Dasar</h4>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm font-semibold">SD Inpres BTN IKIP 1</p>
                         </div>
                     </div>
                 </div>
@@ -951,6 +945,7 @@
             }
         }
 
+        // Close Modal
         function closeModal(projectId) {
             const modal = document.getElementById(`modal-${projectId}`);
             if (modal) {
@@ -959,7 +954,7 @@
             }
         }
 
-        // Copy Contact to Clipboard fallback
+        // Copy Contact to Clipboard
         function copyToClipboard(text, elementId) {
             const dummy = document.createElement("textarea");
             document.body.appendChild(dummy);
